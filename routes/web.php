@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
+    Route::get('house/', function () {
+        Route::get('dog/', function () {
+
+            return view('dog');
+        });
+        return view('house');
+    });
     return view('welcome');
 });
+
+
